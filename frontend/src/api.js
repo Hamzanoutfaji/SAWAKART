@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const LOCAL_API = "http://127.0.0.1:8000";
-const PROD_API = "https://sawakart.onrender.com";
+const PROD_API = "https://sawakart-docker.onrender.com";
 
 let baseURL = LOCAL_API;
 
