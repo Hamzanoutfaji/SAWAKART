@@ -13,7 +13,10 @@ app = FastAPI(title="Amazon Scraper Prototype")
 # CORS for React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"], 
+    allow_origins=[
+        "http://localhost:5173",                   # local dev
+        "https://sawakart-frontend.vercel.app"    # production frontend
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
